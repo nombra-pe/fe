@@ -1,0 +1,114 @@
+---
+const { video = "./fondo.mp4", height = "h-[815px]" } = Astro.props;
+---
+
+<section data-element-id="aura-emg3yk9nd" class="pt-32 pb-20 relative group">
+    <div class="-z-10 absolute top-0 right-0 bottom-0 left-0">
+        <video
+            data-hero-video=""
+            class="absolute inset-0 h-full w-full object-cover pointer-events-none"
+            src={video}
+            muted=""
+            playsinline=""
+            loop=""
+            preload="metadata"></video>
+    </div>
+
+    <div
+        class="max-w-7xl mt-40 mr-auto ml-auto pr-4 pl-4 sm:px-6 lg:px-8 lg:pt-40"
+    >
+        <div class="max-w-3xl">
+            <h1
+                class="sm:text-5xl md:text-7xl md:font-bold text-4xl font-semibold tracking-tight font-nunito mt-6"
+            >
+                Creamos nombres que destacan. Potenciados por IA, diseñados para
+                el mundo.
+            </h1>
+            <p class="sm:text-lg text-base text-black/80 font-nunito mt-4">
+                En <strong>ChangCompany</strong>, transformamos tus ideas en
+                marcas memorables mediante <strong
+                    >IA, análisis de datos y estrategia creativa</strong
+                >. Te ayudamos a <strong
+                    >crear, validar y proteger nombres únicos</strong
+                >, listos para registrar y escalar globalmente.
+            </p>
+            <div class="mt-8 flex flex-wrap items-center gap-3">
+                <a
+                    href="#visit"
+                    class="inline-flex items-center gap-2 rounded-xl px-5 py-3 text-sm font-semibold transition bg-black text-neutral-100 hover:bg-black/90 font-nunito"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        data-lucide="hand"
+                        class="lucide lucide-hand h-4 w-4"
+                        ><path d="M18 11V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2"
+                        ></path><path d="M14 10V4a2 2 0 0 0-2-2a2 2 0 0 0-2 2v2"
+                        ></path><path
+                            d="M10 10.5V6a2 2 0 0 0-2-2a2 2 0 0 0-2 2v8"
+                        ></path><path
+                            d="M18 8a2 2 0 1 1 4 0v6a8 8 0 0 1-8 8h-2c-2.8 0-4.5-.86-5.99-2.34l-3.6-3.6a2 2 0 0 1 2.83-2.82L7 15"
+                        ></path></svg
+                    >
+                    Agenda una asesoría gratuita
+                </a>
+                <a
+                    href="#programs"
+                    class="inline-flex items-center gap-2 transition hover:bg-black/5 text-sm font-medium text-black font-nunito bg-black/0 border-black/10 border rounded-xl pt-3 pr-5 pb-3 pl-5 backdrop-blur-xl"
+                >
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        data-lucide="compass"
+                        class="lucide lucide-compass h-4 w-4"
+                        ><path
+                            d="m16.24 7.76-1.804 5.411a2 2 0 0 1-1.265 1.265L7.76 16.24l1.804-5.411a2 2 0 0 1 1.265-1.265z"
+                        ></path><circle cx="12" cy="12" r="10"></circle></svg
+                    >
+                    Explora nuestros servicios
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            const section = document.querySelector(
+                '[data-element-id="aura-emg3yk9nd"]',
+            );
+            const video = section?.querySelector("video[data-hero-video]");
+            if (!section || !video) return;
+            const playVideo = () => {
+                try {
+                    (video as HTMLVideoElement).currentTime = 0;
+                    (video as HTMLVideoElement).play();
+                } catch (e) {}
+            };
+            const pauseVideo = () => {
+                try {
+                    (video as HTMLVideoElement).pause();
+                    (video as HTMLVideoElement).currentTime = 0;
+                } catch (e) {}
+            };
+            section.addEventListener("mouseenter", playVideo);
+            section.addEventListener("mouseleave", pauseVideo);
+            // For keyboard focus accessibility on links inside hero
+            section.addEventListener("focusin", playVideo);
+            section.addEventListener("focusout", pauseVideo);
+        })();
+    </script>
+</section>
