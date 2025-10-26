@@ -5,9 +5,10 @@ import Features from "@/components/Features.astro";
 import ChooseUs from "@/components/ChooseUs.astro";
 import Services from "@/components/Services.astro";
 import Gallery from "@/components/Gallery.astro";
+import siteData from "@/components/data/siteData.json";
 ---
 
-<Layout>
+<Layout title={siteData.title} description={siteData.description}>
 	<Hero />
 	<Features />
 	<ChooseUs />

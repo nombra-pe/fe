@@ -1,0 +1,91 @@
+---
+import siteData from "@/components/data/siteData.json";
+---
+
+<div class="w-full md:w-1/3 lg:w-1/4 backdrop-blur-lg border-r">
+    <!-- Logo and Header -->
+    <div class="p-6 border-b">
+        <div class="flex items-center">
+            <span class="ml-3 text-lg tracking-tight">{siteData.title}</span>
+        </div>
+        <h1 class="mt-6 text-xl font-light">Bienvenido a {siteData.title}</h1>
+        <p class="mt-2 text-sm">
+            Potencia tu marca con <strong>naming inteligente</strong> impulsado por
+            IA.
+        </p>
+    </div>
+
+    <!-- Steps Navigation -->
+    <div class="p-6">
+        <div class="flex items-center mb-6">
+            <div
+                class="step-indicator active h-8 w-8 rounded-full flex items-center justify-center text-sm"
+            >
+                1
+            </div>
+            <div class="ml-4">
+                <p class="">Account Setup</p>
+                <p class="text-xs">Basic information</p>
+            </div>
+        </div>
+
+        <div class="flex items-center mb-6">
+            <div
+                class="step-indicator h-8 w-8 rounded-full flex items-center justify-center text-sm bg-gray-800"
+            >
+                2
+            </div>
+            <div class="ml-4">
+                <p class="">Workspace</p>
+                <p class="text-xs">Configure your environment</p>
+            </div>
+        </div>
+
+        <div class="flex items-center mb-6">
+            <div
+                class="step-indicator h-8 w-8 rounded-full flex items-center justify-center text-sm bg-gray-800"
+            >
+                3
+            </div>
+            <div class="ml-4">
+                <p class="">Data Integration</p>
+                <p class="text-xs">Connect your data sources</p>
+            </div>
+        </div>
+
+        <div class="flex items-center">
+            <div
+                class="step-indicator h-8 w-8 rounded-full flex items-center justify-center text-sm bg-gray-800"
+            >
+                4
+            </div>
+            <div class="ml-4">
+                <p class="">Preferences</p>
+                <p class="text-xs">Customize your experience</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Help & Support -->
+    <div class="mt-auto p-6 border-t">
+        <div class="flex items-center">
+            <svg
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                ></path>
+            </svg>
+            <span class="ml-2 text-sm">Need help?</span>
+            <a href="#" class="ml-2 text-sm hover:text-blue-300"
+                >Contact support</a
+            >
+        </div>
+    </div>
+</div>

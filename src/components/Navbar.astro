@@ -1,9 +1,10 @@
 ---
+import { Button } from "@/components/ui/button";
+import Link from "./ui/link";
 const menuitems = [
     { href: "/servicios", label: "Servicios" },
     { href: "/proyectos", label: "Proyectos" },
     { href: "/nosotros", label: "Nosotros" },
-    { href: "/blog", label: "Blog" },
     {
         href: "/contacto",
         label: "Contacto",
@@ -18,10 +19,11 @@ const menuitems = [
         >
             <div class="flex items-center justify-between px-4 py-3">
                 <!-- Brand -->
-                <a
+                <p class="font-medium text-black font-nunito">ChangCompany</p>
+                <!-- <a
                     href="#"
                     class="inline-flex items-center justify-center bg-center mix-blend-multiply w-[140px] h-[40px] bg-[url(https://hoirqrkdgbmvpwutwuwj-all.supabase.co/storage/v1/object/public/assets/assets/1b425c19-b754-4a17-9331-a8161895332d_800w.png)] bg-cover rounded invert"
-                ></a>
+                ></a> -->
 
                 <!-- Desktop Nav -->
                 <nav class="hidden items-center gap-8 md:flex">
@@ -40,57 +42,11 @@ const menuitems = [
 
                 <!-- Actions -->
                 <div class="hidden md:flex items-center gap-3">
-                    <a
-                        href="#contact"
-                        class="inline-flex items-center gap-2 rounded-lg border px-3.5 py-2 text-sm font-medium transition border-black/10 bg-black/0 text-black/90 hover:bg-black/5 font-nunito"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            data-lucide="phone"
-                            class="lucide lucide-phone h-4 w-4"
-                            ><path
-                                d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"
-                            ></path></svg
-                        >
-                        Call Us
-                    </a>
-                    <a
-                        href="#visit"
-                        class="inline-flex items-center gap-2 rounded-lg px-3.5 py-2 text-sm font-semibold transition bg-black text-neutral-100 hover:bg-black/90 font-nunito"
-                    >
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            data-lucide="calendar"
-                            class="lucide lucide-calendar h-4 w-4"
-                            ><path d="M8 2v4"></path><path d="M16 2v4"
-                            ></path><rect
-                                width="18"
-                                height="18"
-                                x="3"
-                                y="4"
-                                rx="2"></rect><path d="M3 10h18"></path></svg
-                        >
-                        Book a Visit
-                    </a>
+                    <Link href="/login"> Login </Link>
                 </div>
 
                 <!-- Mobile Menu Button -->
+
                 <button
                     id="menuBtn"
                     class="md:hidden inline-flex h-10 w-10 items-center justify-center rounded-lg border transition border-black/10 bg-black/0 hover:bg-black/5"
@@ -152,7 +108,7 @@ const menuitems = [
                                     d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"
                                 ></path></svg
                             >
-                            Call Us
+                            Contacto
                         </a>
                         <a
                             href="#visit"
@@ -179,7 +135,7 @@ const menuitems = [
                                     rx="2"></rect><path d="M3 10h18"
                                 ></path></svg
                             >
-                            Book a Visit
+                            Visita
                         </a>
                     </div>
                 </nav>
