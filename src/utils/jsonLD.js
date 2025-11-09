@@ -1,4 +1,4 @@
-import siteData from "@/components/data/siteData.json";
+import siteData from "@/data/siteData.json";
 import { slugify } from "@/utils/slugify";
 
 export default function jsonLDGenerator({ type, post, url }) {

@@ -1,17 +1,23 @@
 ---
-import Hero from "@/components/Hero.astro";
 import Layout from "../layouts/Layout.astro";
-import Features from "@/components/Features.astro";
-import ChooseUs from "@/components/ChooseUs.astro";
-import Services from "@/components/Services.astro";
-import Gallery from "@/components/Gallery.astro";
-import siteData from "@/components/data/siteData.json";
+import Header from "@/components/layout/Header.astro";
+import HeroSection from "@/components/sections/HeroSection.astro";
+import AboutSection from "@/components/sections/AboutSection.astro";
+import BenefitsSection from "@/components/sections/BenefitsSection.astro";
+import ServicesSection from "@/components/sections/ServicesSection.astro";
+import PricingSection from "@/components/sections/PricingSection.astro";
+import Footer from "@/components/layout/Footer.astro";
+import siteData from "@/data/siteData.json";
 ---
 
 <Layout title={siteData.title} description={siteData.description}>
-	<Hero />
-	<Features />
-	<ChooseUs />
-	<Services />
-	<Gallery />
+	<Header />
+	<main>
+		<HeroSection />
+		<AboutSection />
+		<BenefitsSection />
+		<ServicesSection />
+		<PricingSection />
+	</main>
+	<Footer />
 </Layout>

@@ -1,10 +1,26 @@
-# Astro Starter Kit: Basics
+# BrandIa - AI-Powered Brand Naming Platform
+
+**BrandIa** es una plataforma de naming potenciada por IA que transforma ideas en marcas memorables mediante análisis de datos y estrategia creativa.
+
+## Instalación
+
+Instalar Bun:
 
 ```sh
-bun create astro@latest -- --template basics
+brew install bun
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Instalar dependencias:
+
+```sh
+bun install
+```
+
+Ejecutar en desarrollo:
+
+```sh
+bun dev
+```
 
 ## 🚀 Project Structure
 
