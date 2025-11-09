@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const t = e.currentTarget;
 
       if (t) {
-        lenis.scrollTo(t.getAttribute("href"), { offset: -132 } ?? "");
+        lenis.scrollTo(t.getAttribute("href"), { offset: -0 } ?? "");
       }
     });
   });

@@ -6,11 +6,16 @@ type ButtonProps = Omit<BaseButtonProps, "asChild"> // it wouldn't make sense to
 interface LinkProps extends ButtonProps {
     href: string
     children: React.ReactNode
+    class?: string // Support Astro's class prop
+    className?: string
 }
 
-export default function Link({ href, children, ...props }: LinkProps) {
+export default function Link({ href, children, class: classFromAstro, className, ...props }: LinkProps) {
+    // Merge class and className (prefer className if both are provided)
+    const finalClassName = className || classFromAstro
+
     return (
-        <Button asChild {...props}>
+        <Button asChild className={finalClassName} {...props}>
             <a href={href}>{children}</a>
         </Button>
     )

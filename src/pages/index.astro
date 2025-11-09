@@ -1,17 +1,14 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Header from "@/components/layout/Header.astro";
 import HeroSection from "@/components/sections/HeroSection.astro";
 import AboutSection from "@/components/sections/AboutSection.astro";
 import BenefitsSection from "@/components/sections/BenefitsSection.astro";
 import ServicesSection from "@/components/sections/ServicesSection.astro";
 import PricingSection from "@/components/sections/PricingSection.astro";
-import Footer from "@/components/layout/Footer.astro";
 import siteData from "@/data/siteData.json";
 ---
 
 <Layout title={siteData.title} description={siteData.description}>
-	<Header />
 	<main>
 		<HeroSection />
 		<AboutSection />
@@ -19,5 +16,4 @@ import siteData from "@/data/siteData.json";
 		<ServicesSection />
 		<PricingSection />
 	</main>
-	<Footer />
 </Layout>

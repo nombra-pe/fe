@@ -1,7 +1,8 @@
 ---
 import MainHead from "./MainHead.astro";
 import "../styles/global.css";
-import Navbar from "@/components/legacy/Navbar.astro";
+import Header from "@/components/layout/Header.astro";
+import Footer from "@/components/layout/Footer.astro";
 // import Background from "../components/common/Background.astro";
 // import Footer from "@/components/common/Footer.astro";
 
@@ -29,14 +30,10 @@ const { ...props } = Astro.props;
 		class="antialiased selection:bg-white selection:text-neutral-900 text-black"
 		style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial;"
 	>
-		<!-- <Background
-			video="https://pub-9902aa9dba8e45dc97f863e3bde924ad.r2.dev/fondo.mp4"
-			height="h-screen"
-		/> -->
 		<main>
-			<Navbar />
+			<Header />
 			<slot />
-			<!-- <Footer /> -->
+			<Footer />
 		</main>
 	</body>
 </html>
