@@ -1,0 +1,37 @@
+---
+import MainHead from "./MainHead.astro";
+import "../styles/global.css";
+import Header from "@/components/layout/Header.astro";
+import Footer from "@/components/layout/Footer.astro";
+// import Background from "../components/common/Background.astro";
+// import Footer from "@/components/common/Footer.astro";
+
+const { ...props } = Astro.props;
+---
+
+<html lang="es">
+	<MainHead {...props} />
+	<style>
+		html.lenis {
+			height: auto;
+		}
+		.lenis.lenis-smooth {
+			scroll-behavior: auto;
+		}
+		.lenis.lenis-smooth [data-lenis-prevent] {
+			overscroll-behavior: contain;
+		}
+		.lenis.lenis-stopped {
+			overflow: hidden;
+		}
+	</style>
+	<script src="../utils/lenis"></script>
+	<body
+		class="antialiased selection:bg-white selection:text-neutral-900 text-black"
+		style="font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial;"
+	>
+		<main>
+			<slot />
+		</main>
+	</body>
+</html>
